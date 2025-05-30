@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-US" style="transform: none;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</style>
+<script src="./Color Palette Generator_files/jquery.min.js" id="jquery-core-js"></script>
+
+
+<script src="./Color Palette Generator_files/js" id="google_gtagjs-js" async=""></script>
+
+<meta name="generator" content="Site Kit by Google 1.149.1"><script async="" src="./Color Palette Generator_files/f.txt"></script>
+
+<link rel="stylesheet" id="0629b538ee-css" href="./Color Palette Generator_files/frontend.min.css" media="all">
+<link rel="stylesheet" id="064d71774d-css" href="./Color Palette Generator_files/hidedefault.min.css" media="all">
+<meta name="google-adsense-platform-account" content="ca-host-pub-2644536267352236">
+<meta name="google-adsense-platform-domain" content="sitekit.withgoogle.com">
+<meta name="generator" content="Elementor 3.28.3; features: additional_custom_breakpoints, e_local_google_fonts; settings: css_print_method-external, google_font-enabled, font_display-block">
+			<style>
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+					background-image: none !important;
+				}
+				@media screen and (max-height: 1024px) {
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+				@media screen and (max-height: 640px) {
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+			</style>
+			
+		<style id="wp-custom-css">
+
+
+.converter {
+	border-width: 0 0 0 3px;
+    border-color: #00d2c8;
+    color: var(--untitled-ui-gray900);
+    background-color: rgba(0, 0, 0, .03);
+	border-left: 5px solid #00d2c8;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-right-style: solid;
+    border-radius: 9px;
+    margin: 40px -50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 5%;
+    font-size: 18px;
+    font-style: normal;
+	
+}
+.converter input[type="number"]{
+        padding: 8px;
+        margin-top: 8px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+        border: 1px solid #e0e0e0;
+	
+}
+.converter .result{font-weight:bold;font-size:18px;}		</style>
+		
+</head>
+
+<div class="body-overlay"></div>
+	<div id="pfy_reading_progress" style="--scrollAmount: 6.305965443309371%;"></div>
+	
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                <div class="pfy__top_single_two_info text-center">
+        </a>
+                        <h1>Color Palette Generator</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+                
+                    <div class="entry-content">
+					
+                            <div class="cpg-container">
+        <div class="cpg-toolbar">
+            <select class="cpg-scheme-select" id="schemeSelect">
+                <option value="random">Random</option>
+                <option value="monochromatic">Monochromatic</option>
+                <option value="complementary">Complementary</option>
+                <option value="triadic">Triadic</option>
+                <option value="analogous">Analogous</option>
+            </select>
+            <button class="cpg-btn cpg-btn-primary" id="generateBtn">
+                Generate            </button>
+        </div>
+
+        <div class="cpg-color-palette" id="colorPalette"><div class="cpg-color-box"><div class="cpg-color-preview" style="background-color: rgb(147, 129, 255);"><div class="cpg-copy-icon">
+    
+        </div></div><div class="cpg-color-info"><div class="cpg-color-code">#9381FF</div></div></div><div class="cpg-color-box"><div class="cpg-color-preview" style="background-color: rgb(184, 184, 255);"><div class="cpg-copy-icon">
+        </div></div><div class="cpg-color-info"><div class="cpg-color-code">#B8B8FF</div></div></div><div class="cpg-color-box"><div class="cpg-color-preview" style="background-color: rgb(248, 247, 255);"><div class="cpg-copy-icon">
+        </div></div><div class="cpg-color-info"><div class="cpg-color-code">#F8F7FF</div></div></div><div class="cpg-color-box"><div class="cpg-color-preview" style="background-color: rgb(255, 238, 221);"><div class="cpg-copy-icon">
+        </div></div><div class="cpg-color-info"><div class="cpg-color-code">#FFEEDD</div></div></div><div class="cpg-color-box"><div class="cpg-color-preview" style="background-color: rgb(255, 216, 190);"><div class="cpg-copy-icon">
+        </div></div><div class="cpg-color-info"><div class="cpg-color-code">#FFD8BE</div></div></div></div>
+        <div class="cpg-copy-message" id="copyMessage"></div>
+    </div>
+
+<h3 id="monochromatic-palettes">Монохроматическая палитра</h3>
+<p>В монохромных палитрах используются вариации (оттенки, полутона) одного цвета.</p>
+<p><strong>Использование</strong>: идеально подходит для минималистичных дизайнов. Они обеспечивают визуальную целостность, идеально подходят для поддержания единообразия в рамках дизайн-проекта.</p>
+<h3 id="complementary-palettes">Комплиментарная палитра</h3>
+<p>Дополнительные палитры содержат цвета, расположенные прямо напротив друг друга на цветовом круге.</p>
+<p><strong>Использование</strong>: идеально подходит для минималистичных дизайнов. Они обеспечивают визуальную целостность, идеально подходят для поддержания единообразия в рамках дизайн-проекта.</p>
+<h3 id="triadic-palettes">Триадическия палитра</h3>
+<p><strong>Использование</strong>: обеспечивает яркие результаты, сохраняя при этом ощущение гармонии. Эффективно в проектах, требующих динамичных, но сбалансированных изображений.</p>
+<h3 id="analogous-palettes">Аналогичная палитра</h3>
+<p>Аналогичные палитры состоят из цветов, расположенных рядом друг с другом на цветовом круге.</p>
+<p><strong>Использование</strong>: подходит для создания спокойных и естественных дизайнов. Эти палитры часто встречаются в природе и радуют глаз.</p>
+<h3 id="random-palettes">Случайные палитры</h3>
+<p>Случайные палитры - это сочетание цветов, созданное без соблюдения какой-либо определенной схемы.</p>
+<p><strong>Использование</strong>: идеально подходит для экспериментальных проектов и поиска свежих идей. </p>
+
+<script src="./Color Palette Generator_files/frontend.min.js" id="tve-dash-frontend-js"></script>
+
+<script defer="" src="./Color Palette Generator_files/autoptimize_9723a6b176f13c080671d24313700fdf.js"></script>
+
+
+
+
+
+</body></html>
